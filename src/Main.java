@@ -27,12 +27,12 @@ public class Main {
         salary1[4] = 14000;
         for (int i = 0; i < salary1.length; i++) {
             if (salary1[i] < min) {
-                min = salary[i];
+                min = salary1[i];
             }
         }
         for (int g = 0; g < salary1.length; g++) {
             if (salary1[g] > max) {
-                max = salary[g];
+                max = salary1[g];
             }
         }
         System.out.println("Минимальаня сумма трат за неделю составила " + min + " рублей. Максимальная сумма трат за неделю составила " + max + " рублей.");
@@ -45,7 +45,7 @@ public class Main {
         salary2[2] = 34575;
         salary2[3] = 123;
         salary2[4] = 234234;
-        float average = (float) (salary2[0] + salary2[1] + salary2[2] + salary2[3] + salary2[4]) / 4;
+        float average = (float) (salary2[0] + salary2[1] + salary2[2] + salary2[3] + salary2[4]) / salary.length;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей.");
 
         //4 задание
